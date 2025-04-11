@@ -132,12 +132,13 @@ python main.py --modo prever --arquivo-modelo models/meu_modelo.pkl --dados-pred
 
 ### Exemplo Prático: Aplicação prática em análise de crédito
 
---------------------------------------------------------------------------------------------
-| Cenário real	                   |  Como o modelo ajuda                                  |
-| Conceder ou negar crédito	       |  Modelo preverá 1 (aprovar) ou 0 (negar)              |
-| Identificar inadimplentes	       |  Modelo pode prever quem tem alto risco de não pagar  |
-| Automatizar decisões de crédito	 |  Baseado em dados históricos dos clientes             |
---------------------------------------------------------------------------------------------
+## Aplicações Reais no Cenário de Análise de Crédito
+
+| Cenário Real                   | Como o Modelo Ajuda                                      |
+|-------------------------------|-----------------------------------------------------------|
+| Conceder ou negar crédito      | O modelo prevê `1` (aprovar) ou `0` (negar) automaticamente. |
+| Identificar inadimplentes      | O modelo pode prever clientes com alto risco de inadimplência. |
+| Automatizar decisões de crédito| Automatiza decisões com base em dados históricos de clientes. |
 
 O modelo pode aprender com dados históricos como:
 
