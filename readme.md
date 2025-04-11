@@ -130,6 +130,55 @@ python main.py --modo treinar --dados data/meus_dados.csv --modelo logistic_regr
 python main.py --modo prever --arquivo-modelo models/meu_modelo.pkl --dados-predicao data/dados_para_predicao.csv
 ```
 
+### Exemplo Prático: Aplicação prática em análise de crédito
+
+--------------------------------------------------------------------------------------------
+| Cenário real	                   |  Como o modelo ajuda                                  |
+| Conceder ou negar crédito	       |  Modelo preverá 1 (aprovar) ou 0 (negar)              |
+| Identificar inadimplentes	       |  Modelo pode prever quem tem alto risco de não pagar  |
+| Automatizar decisões de crédito	 |  Baseado em dados históricos dos clientes             |
+--------------------------------------------------------------------------------------------
+
+O modelo pode aprender com dados históricos como:
+
+- Renda
+
+- Idade
+
+- Tempo de emprego
+
+- Dívidas existentes
+
+- Score de crédito
+
+### Exemplo de arquivo dataset_credito.csv:
+
+```
+renda_mensal,idade,tempo_emprego,score_credito,dividas_existentes,aprovado_credito
+2500,30,3,650,1,1
+1500,22,1,580,2,0
+4000,45,15,720,0,1
+1200,19,0.5,500,3,0
+5000,38,10,700,0,1
+2700,28,4,640,1,1
+1000,21,0.2,450,4,0
+```
+
+Coluna aprovado_credito é a variável target, que o modelo vai aprender a prever (0 = não aprovado, 1 = aprovado).
+
+### Como usar isso com seu projeto:
+1. Salve o CSV no diretório data/ com o nome dataset_credito.csv.
+
+2. Execute o projeto com esse comando para treinar o modelo:
+```
+python main.py --modo treinar --dados data/dataset_credito.csv --modelo random_forest --estimadores 100
+```
+
+3. Para fazer predições com novos dados depois, salve um CSV sem a coluna aprovado_credito e execute:
+```
+python main.py --modo prever --arquivo-modelo models/modelo_treinado.pkl --dados-predicao data/novos_clientes.csv
+```
+
 ## Módulos do Projeto
 
 ### preprocess.py
