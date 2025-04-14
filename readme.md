@@ -216,7 +216,7 @@ Script principal que integra todos os módulos e fornece uma interface de linha 
 
 ## Contribuição
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+Contribuições são bem-vindas! Sinta-se à vontade para enviar e-mails para gabriel@grupophdtecnologia.com.br.
 
 ## Licença
 
